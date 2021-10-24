@@ -105,7 +105,7 @@ class TeamList extends Component {
     }
 
     removeChannel = (teamIndex, channelIndex) => {
-        console.log(teamIndex, channelIndex)
+  
         const newTeam = this.state.teams.map((team, i)=> i===teamIndex ? {...team, channels: team.channels.filter(channel=> channel.index !== channelIndex) }: {...team})
         
         this.setState({
@@ -128,7 +128,7 @@ class TeamList extends Component {
 
 
     render() {
-        console.log(this.state.teams);
+       
         return (
             <div>
                 <div className="teams-list">
